@@ -6,6 +6,10 @@ class FoodsService
 
     json = JSON.parse(response.body, symbolize_names: true)
 
+    json[:foods].each do |data|
+      Food.new(data)
+    end
+    
     json[:foods]
   end
 end
