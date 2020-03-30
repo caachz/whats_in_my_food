@@ -8,15 +8,15 @@ describe 'User' do
     fill_in 'q', with: 'sweet potatoes'
     click_on 'Search'
 
-    expect(current_page).to eq("/foods")
+    expect(current_path).to eq("/foods")
 
-    expect(page).to have_content("Total Items Returned: 10")
-    expect(page).to have_css(".food", count: 10)
+    expect(page).to have_content("50 Results")
+    expect(page).to have_css(".food", count: 50)
 
     within(first(".food")) do
-      expect(page).to have_css(".GTIN/UPC code")
+      expect(page).to have_css(".upccode")
       expect(page).to have_css(".description")
-      expect(page).to have_css(".Brand Owner")
+      expect(page).to have_css(".BrandOwner")
       expect(page).to have_css(".ingredients")
     end
   end
