@@ -1,0 +1,230 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.nal.usda.gov/fdc/v1/search?api_key=<USDA_API_KEY>&ingredients=sweet%20potatoes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 30 Mar 2020 16:59:14 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - POST,  GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, Authorization
+      Access-Control-Max-Age:
+      - '3600'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      - max-age=63072000; includeSubDomains; preload
+      Age:
+      - '22'
+      Via:
+      - https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"foodSearchCriteria":{"ingredients":"sweet potatoes","pageNumber":1,"requireAllWords":false},"totalHits":26412,"currentPage":1,"totalPages":529,"foods":[{"fdcId":574779,"description":"REAL
+        VEGETABLE CHIPS","dataType":"Branded","gtinUpc":"728229015529","publishedDate":"2019-04-01","brandOwner":"The
+        Hain Celestial Group, Inc.","ingredients":"A BLEND OF SWEET POTATOES (SWEET
+        POTATO, PURPLE SWEET POTATO, BATATA), AVOCADO OIL, SEA SALT.","allHighlightFields":"<b>Ingredients</b>:
+        A BLEND OF <em>SWEET</em> <em>POTATOES</em> (<em>SWEET</em> <em>POTATO</em>,
+        PURPLE <em>SWEET</em> <em>POTATO</em>, BATATA), AVOCADO OIL, SEA SALT.","score":-742.13696},{"fdcId":402489,"description":"SEASONED
+        VEGETABLE POWDER","dataType":"Branded","gtinUpc":"8809069966485","publishedDate":"2019-04-01","brandOwner":"WANG","ingredients":"VEGETABLE
+        FLAKE: {PURPLE SWEET POTATO FLAKE (PURPLE SWEET POTATO, SWEET POTATO STARCH),
+        POTATO FLAKE (POTATO, SWEET POTATO STARCH), CARROT FLAKE (CARROT), SWEET PUMPKIN
+        FLAKE(SWEET PUMPKIN)}, SMOKED SALMON (SALMON, SALT), DRIED SEAWEED, BROWN
+        RICE OIL, SESAME, ORGANIC SUGAR, SALT.","allHighlightFields":"<b>Ingredients</b>:
+        VEGETABLE FLAKE: {PURPLE <em>SWEET</em> <em>POTATO</em> FLAKE (PURPLE <em>SWEET</em>
+        <em>POTATO</em>, <em>SWEET</em> <em>POTATO</em> STARCH), <em>POTATO</em>","score":-742.19293},{"fdcId":554912,"description":"SWEET
+        POTATO CHIPS","dataType":"Branded","gtinUpc":"679757128888","publishedDate":"2019-04-01","brandOwner":"Ktm
+        Services, Inc.","ingredients":"SWEET POTATO (YELLOW) 27%, SWEET POTATO (PURPLE)
+        20%, SWEET POTATO (ORANGE) 20%, SWEET POTATO (YELLOW/PURPLE) 20%, RICE BRAN
+        OIL 12%, SALT 1%","allHighlightFields":"<b>Ingredients</b>: <em>SWEET</em>
+        <em>POTATO</em> (YELLOW) 27%, <em>SWEET</em> <em>POTATO</em> (PURPLE) 20%,
+        <em>SWEET</em> <em>POTATO</em> (ORANGE) 20%, <em>SWEET</em> <em>POTATO</em>
+        (YELLOW/PURPLE) 20%, RICE BRAN OIL 12%, SALT 1%","score":-742.245},{"fdcId":518188,"description":"GARDEN
+        VEGGIE CHIPS","dataType":"Branded","gtinUpc":"050428535363","publishedDate":"2019-04-01","brandOwner":"ABOUND","ingredients":"ORANGE
+        SWEET POTATOES, YELLOW SWEET POTATOES, CARROTS, GREEN BEANS, SQUASH, PURPLE
+        SWEET POTATOES, TARO, CANOLA OIL WITH MIXED TOCOPHEROLS TO PROTECT FLAVOR,
+        MALTODEXTRIN, SEA SALT.","allHighlightFields":"<b>Ingredients</b>: ORANGE
+        <em>SWEET</em> <em>POTATOES</em>, YELLOW <em>SWEET</em> <em>POTATOES</em>,
+        CARROTS, GREEN BEANS, SQUASH, PURPLE <em>SWEET</em> <em>POTATOES</em>","score":-742.89233},{"fdcId":513697,"description":"VEGGIE
+        CHIPS SNACKS","dataType":"Branded","gtinUpc":"038718709960","publishedDate":"2019-04-01","brandOwner":"GOODFIELDS","ingredients":"ORANGE
+        SWEET POTATOES, YELLOW SWEET POTATOES, CARROTS, GREEN BEANS, SQUASH, PURPLE
+        SWEET POTATOES, TARO, CANOLA OIL WITH MIXED TOCOPHEROLS TO PROTECT FLAVOR,
+        MALTODEXTRIN, SEA SALT.","allHighlightFields":"<b>Ingredients</b>: ORANGE
+        <em>SWEET</em> <em>POTATOES</em>, YELLOW <em>SWEET</em> <em>POTATOES</em>,
+        CARROTS, GREEN BEANS, SQUASH, PURPLE <em>SWEET</em> <em>POTATOES</em>","score":-742.89233},{"fdcId":522224,"description":"VEGGIES
+        CHIPS","dataType":"Branded","gtinUpc":"841112101601","publishedDate":"2019-04-01","brandOwner":"Speedway
+        LLC","ingredients":"ORANGE SWEET POTATOES, YELLOW SWEET POTATOES, CARROTS,
+        GREEN BEANS, SQUASH, PURPLE SWEET POTATOES, TARO, CANOLA OIL WITH MIXED TOCOPHEROLS
+        TO PROTECT FLAVOR, MALTODEXTRIN, SEA SALT.","allHighlightFields":"<b>Ingredients</b>:
+        ORANGE <em>SWEET</em> <em>POTATOES</em>, YELLOW <em>SWEET</em> <em>POTATOES</em>,
+        CARROTS, GREEN BEANS, SQUASH, PURPLE <em>SWEET</em> <em>POTATOES</em>","score":-742.89233},{"fdcId":713492,"description":"SPICED
+        MASHED SWEET POTATO","dataType":"Branded","gtinUpc":"085239046159","publishedDate":"2019-12-06","brandOwner":"GOOD
+        & GATHER","ingredients":"SWEET POTATO MASH (SWEET POTATOES, BUTTER, BROWN
+        SUGAR, SPICES, SEA SALT), PEPITAS (PUMPKIN SEEDS).","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATO</em> MASH (<em>SWEET</em> <em>POTATOES</em>, BUTTER,
+        BROWN SUGAR, SPICES, SEA SALT), PEPITAS (PUMPKIN SEEDS).","score":-743.1541},{"fdcId":364503,"description":"VEGGIE-GO''S,
+        CHEWY FRUIT & VEGGIE SNACKS, SWEET POTATOES APPLES SPICES","dataType":"Branded","gtinUpc":"094723500046","publishedDate":"2019-04-01","brandOwner":"S.A.C.
+        Industries, Inc.","ingredients":"ORGANIC SWEET POTATO PIE PUREE (ORGANIC APPLES,
+        ORGANIC SWEET POTATOES, ORGANIC SPICES, CITRIC ACID).","allHighlightFields":"<b>Ingredients</b>:
+        ORGANIC <em>SWEET</em> <em>POTATO</em> PIE PUREE (ORGANIC APPLES, ORGANIC
+        <em>SWEET</em> <em>POTATOES</em>, ORGANIC SPICES, CITRIC ACID).","score":-743.1541},{"fdcId":425509,"description":"B4Y,
+        DRIED VEGGIE SNACKS","dataType":"Branded","gtinUpc":"011822584449","publishedDate":"2019-04-01","brandOwner":"Rite
+        Aid Corporation","ingredients":"SWEET POTATO, SQUASH, TARO, CARROT, GREEN
+        BEAN, PURPLE SWEET POTATO, CANOLA OIL, DEXTRIN, SEA SALT.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATO</em>, SQUASH, TARO, CARROT, GREEN BEAN, PURPLE <em>SWEET</em>
+        <em>POTATO</em>, CANOLA OIL, DEXTRIN, SEA SALT.","score":-743.2538},{"fdcId":483478,"description":"UNSALTED
+        VEGGIE SNAX","dataType":"Branded","gtinUpc":"780562111399","publishedDate":"2019-04-01","brandOwner":"Sunrise
+        Natural Foods","ingredients":"SWEET POTATO, SQUASH, TARO, CARROT, GREEN BEAN,
+        PURPLE SWEET POTATO, NON-HYDROGENATED CANOLA OIL, DEXTRIN.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATO</em>, SQUASH, TARO, CARROT, GREEN BEAN, PURPLE <em>SWEET</em>
+        <em>POTATO</em>, NON-HYDROGENATED CANOLA OIL, DEXTRIN.","score":-743.2538},{"fdcId":436769,"description":"VEGETABLE
+        STICK SNACK","dataType":"Branded","gtinUpc":"604215900287","publishedDate":"2019-04-01","brandOwner":"Ito,
+        Inc.","ingredients":"SWEET POTATO, TARO, PURPLE SWEET POTATO, CARROT, GREAN
+        BEANS, CANOLA OLI, MALTOSE DEXTRIN, SEA SALT.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATO</em>, TARO, PURPLE <em>SWEET</em> <em>POTATO</em>,
+        CARROT, GREAN BEANS, CANOLA OLI, MALTOSE DEXTRIN, SEA SALT.","score":-743.2538},{"fdcId":581415,"description":"SWEET
+        POTATOES, RED POTATOES, CARROTS & PARSNIPS VEGETABLES FOR ROASTING","dataType":"Branded","gtinUpc":"070560970907","publishedDate":"2019-04-01","brandOwner":"The
+        Pictsweet Company","ingredients":"SWEET POTATOES, RED POTATOES, CARROTS, PARSNIPS.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATOES</em>, RED <em>POTATOES</em>, CARROTS, PARSNIPS.","score":-743.29944},{"fdcId":712906,"description":"100%
+        PURE MASHED SWEET POTATOES","dataType":"Branded","gtinUpc":"070560939065","publishedDate":"2019-12-06","brandOwner":"The
+        Pictsweet Company","ingredients":"SWEET POTATOES.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATOES</em>.","score":-743.31366},{"fdcId":369530,"description":"AMAZONAS
+        RAINFOREST PRODUCT, SWEET POTATO FLOUR","dataType":"Branded","gtinUpc":"742987121483","publishedDate":"2019-04-01","brandOwner":"Amazonas
+        Imports, Inc.","ingredients":"SWEET POTATO.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATO</em>.","score":-743.31366},{"fdcId":437961,"description":"ANTI-GRAIN,
+        SWEET POTATO FLOUR","dataType":"Branded","gtinUpc":"861420000120","publishedDate":"2019-04-01","brandOwner":"Anti-Grain
+        Foods LLC","ingredients":"SWEET POTATO","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATO</em>","score":-743.31366},{"fdcId":545796,"description":"CRINKLE
+        CUT SWEET POTATOES","dataType":"Branded","gtinUpc":"021130111848","publishedDate":"2019-04-01","brandOwner":"Safeway,
+        Inc.","ingredients":"SWEET POTATOES.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATOES</em>.","score":-743.31366},{"fdcId":604116,"description":"DICED
+        SWEET POTATOES","dataType":"Branded","gtinUpc":"826766715480","publishedDate":"2019-04-01","brandOwner":"Renaissance
+        Food Group, LLC","ingredients":"SWEET POTATOES.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATOES</em>.","score":-743.31366},{"fdcId":746356,"description":"DICED
+        SWEET POTATOES","dataType":"Branded","gtinUpc":"07789027404","publishedDate":"2019-12-06","brandOwner":"Wegmans
+        Food Markets, Inc.","ingredients":"SWEET POTATOES.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATOES</em>.","score":-743.31366},{"fdcId":453052,"description":"DOTTAVIO,
+        YAMS","dataType":"Branded","gtinUpc":"853917005213","publishedDate":"2019-04-01","brandOwner":"M.
+        D''Ottavio Produce, Inc.","ingredients":"SWEET POTATOES","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATOES</em>","score":-743.31366},{"fdcId":447487,"description":"INDIVIDUALLY
+        QUICK FROZEN SWEET POTATO","dataType":"Branded","gtinUpc":"018184805021","publishedDate":"2019-04-01","brandOwner":"Coloma
+        Frozen Foods, Inc.","ingredients":"SWEET POTATO.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATO</em>.","score":-743.31366},{"fdcId":588395,"description":"POPPERS
+        & TOPPERS SWEET POTATO","dataType":"Branded","gtinUpc":"866958000499","publishedDate":"2019-04-01","brandOwner":"GLEAN","ingredients":"SWEET
+        POTATOES","allHighlightFields":"<b>Ingredients</b>: <em>SWEET</em> <em>POTATOES</em>","score":-743.31366},{"fdcId":450039,"description":"RAW
+        SWEET POTATO FRIES","dataType":"Branded","gtinUpc":"087738172100","publishedDate":"2019-04-01","brandOwner":"Caldwell
+        & Son Inc.","ingredients":"SWEET POTATO.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATO</em>.","score":-743.31366},{"fdcId":488494,"description":"ROASTED
+        SWEET POTATO CHUNKS","dataType":"Branded","gtinUpc":"085239005422","publishedDate":"2019-04-01","brandOwner":"Target
+        Stores","ingredients":"SWEET POTATOES.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATOES</em>.","score":-743.31366},{"fdcId":580521,"description":"ROASTED
+        SWEET POTATOES","dataType":"Branded","gtinUpc":"085239008942","publishedDate":"2019-04-01","brandOwner":"Target
+        Stores","ingredients":"SWEET POTATOES.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATOES</em>.","score":-743.31366},{"fdcId":368420,"description":"STAHLBUSH
+        ISLAND FARMS, SWEET POTATOES","dataType":"Branded","gtinUpc":"638882125773","publishedDate":"2019-04-01","brandOwner":"Stahlbush
+        Island Farms, Inc.","ingredients":"SWEET POTATOES.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATOES</em>.","score":-743.31366},{"fdcId":731372,"description":"STEAM-IN-BAG
+        SWEET POTATO CUBES","dataType":"Branded","gtinUpc":"085239048788","publishedDate":"2019-12-06","brandOwner":"GOOD
+        & GATHER","ingredients":"SWEET POTATOES.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATOES</em>.","score":-743.31366},{"fdcId":598165,"description":"SWEET
+        CRINKLE CUT POTATO","dataType":"Branded","gtinUpc":"854340007546","publishedDate":"2019-04-01","brandOwner":"NOT
+        A BRANDED ITEM","ingredients":"SWEET POTATO","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATO</em>","score":-743.31366},{"fdcId":692306,"description":"SWEET
+        POTATO \"FETTUCCINE\" FRESH VEGGIE NOODLES, SWEET POTATO","dataType":"Branded","gtinUpc":"716519068034","publishedDate":"2019-12-06","brandOwner":"MANN''S","ingredients":"SWEET
+        POTATOES","allHighlightFields":"<b>Ingredients</b>: <em>SWEET</em> <em>POTATOES</em>","score":-743.31366},{"fdcId":778578,"description":"SWEET
+        POTATO CHUNKS","dataType":"Branded","gtinUpc":"035820101716","publishedDate":"2020-02-27","brandOwner":"FOOD
+        LION","ingredients":"SWEET POTATO","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATO</em>","score":-743.31366},{"fdcId":524666,"description":"SWEET
+        POTATO CHUNKS","dataType":"Branded","gtinUpc":"030223007098","publishedDate":"2019-04-01","brandOwner":"NOT
+        A BRANDED ITEM","ingredients":"SWEET POTATO.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATO</em>.","score":-743.31366},{"fdcId":587356,"description":"SWEET
+        POTATO GOODNESS FLOUR & POWDER","dataType":"Branded","gtinUpc":"866958000406","publishedDate":"2019-04-01","brandOwner":"GLEAN","ingredients":"SWEET
+        POTATOES","allHighlightFields":"<b>Ingredients</b>: <em>SWEET</em> <em>POTATOES</em>","score":-743.31366},{"fdcId":586017,"description":"SWEET
+        POTATO GOODNESS FLOUR & POWDER","dataType":"Branded","gtinUpc":"866958000437","publishedDate":"2019-04-01","brandOwner":"GLEAN","ingredients":"SWEET
+        POTATOES","allHighlightFields":"<b>Ingredients</b>: <em>SWEET</em> <em>POTATOES</em>","score":-743.31366},{"fdcId":531718,"description":"SWEET
+        POTATO NOODLE","dataType":"Branded","gtinUpc":"030223017127","publishedDate":"2019-04-01","brandOwner":"NOT
+        A BRANDED ITEM","ingredients":"SWEET POTATO.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATO</em>.","score":-743.31366},{"fdcId":550632,"description":"SWEET
+        POTATO NOODLES","dataType":"Branded","gtinUpc":"605806010118","publishedDate":"2019-04-01","brandOwner":"Growers
+        Marketing, LLC","ingredients":"SWEET POTATOES.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATOES</em>.","score":-743.31366},{"fdcId":437142,"description":"SWEET
+        POTATO NOODLES","dataType":"Branded","gtinUpc":"734347160034","publishedDate":"2019-04-01","brandOwner":"Czajkowski
+        Farm","ingredients":"SWEET POTATO.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATO</em>.","score":-743.31366},{"fdcId":550670,"description":"SWEET
+        POTATO NOODLES","dataType":"Branded","gtinUpc":"605806010125","publishedDate":"2019-04-01","brandOwner":"Growers
+        Marketing, LLC","ingredients":"SWEET POTATOES.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATOES</em>.","score":-743.31366},{"fdcId":532028,"description":"SWEET
+        POTATO NOODLES","dataType":"Branded","gtinUpc":"605806000751","publishedDate":"2019-04-01","brandOwner":"Growers
+        Marketing, LLC","ingredients":"SWEET POTATOES.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATOES</em>.","score":-743.31366},{"fdcId":531901,"description":"SWEET
+        POTATO NOODLES","dataType":"Branded","gtinUpc":"790629122213","publishedDate":"2019-04-01","brandOwner":"Wholesale
+        Produce Supply, LLC","ingredients":"SWEET POTATO","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATO</em>","score":-743.31366},{"fdcId":437415,"description":"SWEET
+        POTATO NOODLES","dataType":"Branded","gtinUpc":"826766810345","publishedDate":"2019-04-01","brandOwner":"Renaissance
+        Food Group, LLC","ingredients":"SWEET POTATO","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATO</em>","score":-743.31366},{"fdcId":733894,"description":"SWEET
+        POTATO STICKS READY VEGGIES","dataType":"Branded","gtinUpc":"7203688174","publishedDate":"2019-12-06","brandOwner":"HARRIS
+        TEETER","ingredients":"SWEET POTATOES.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATOES</em>.","score":-743.31366},{"fdcId":516217,"description":"SWEET
+        POTATO VEGGIE NOODLES","dataType":"Branded","gtinUpc":"782796027934","publishedDate":"2019-04-01","brandOwner":"PAPA
+        JOHNS SALADS & PRODUCE","ingredients":"SWEET POTATO.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATO</em>.","score":-743.31366},{"fdcId":600987,"description":"SWEET
+        POTATOES","dataType":"Branded","gtinUpc":"070560951975","publishedDate":"2019-04-01","brandOwner":"The
+        Pictsweet Company","ingredients":"SWEET POTATOES.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATOES</em>.","score":-743.31366},{"fdcId":535125,"description":"SWEET
+        POTATOES","dataType":"Branded","gtinUpc":"492111402857","publishedDate":"2019-04-01","brandOwner":"ARCHER
+        FARMS","ingredients":"SWEET POTATOES.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATOES</em>.","score":-743.31366},{"fdcId":512404,"description":"SWEET
+        POTATOES","dataType":"Branded","gtinUpc":"085239028544","publishedDate":"2019-04-01","brandOwner":"Target
+        Stores","ingredients":"SWEET POTATOES.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATOES</em>.","score":-743.31366},{"fdcId":579939,"description":"SWEET
+        POTATOES","dataType":"Branded","gtinUpc":"070560970600","publishedDate":"2019-04-01","brandOwner":"The
+        Pictsweet Company","ingredients":"SWEET POTATOES.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATOES</em>.","score":-743.31366},{"fdcId":545811,"description":"SWEET
+        POTATOES","dataType":"Branded","gtinUpc":"076700002019","publishedDate":"2019-04-01","brandOwner":"TAYLOR''S","ingredients":"SWEET
+        POTATOES.","allHighlightFields":"<b>Ingredients</b>: <em>SWEET</em> <em>POTATOES</em>.","score":-743.31366},{"fdcId":688092,"description":"SWEET
+        POTATOES","dataType":"Branded","gtinUpc":"046567926179","publishedDate":"2019-12-06","brandOwner":"Raley''s","ingredients":"SWEET
+        POTATOES.","allHighlightFields":"<b>Ingredients</b>: <em>SWEET</em> <em>POTATOES</em>.","score":-743.31366},{"fdcId":435857,"description":"WHOLE
+        FOODS MARKET, SWEET POTATO NOODLES","dataType":"Branded","gtinUpc":"036406304893","publishedDate":"2019-04-01","brandOwner":"Bread
+        & Circus Inc.","ingredients":"SWEET POTATO.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATO</em>.","score":-743.31366},{"fdcId":437404,"description":"WHOLE
+        FOODS MARKET, SWEET POTATOES","dataType":"Branded","gtinUpc":"826766810123","publishedDate":"2019-04-01","brandOwner":"Renaissance
+        Food Group, LLC","ingredients":"SWEET POTATOES.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATOES</em>.","score":-743.31366},{"fdcId":489982,"description":"YAMS
+        MASHED SWEET POTATO","dataType":"Branded","gtinUpc":"017600044518","publishedDate":"2019-04-01","brandOwner":"Bruce
+        Foods, Inc.","ingredients":"SWEET POTATOES.","allHighlightFields":"<b>Ingredients</b>:
+        <em>SWEET</em> <em>POTATOES</em>.","score":-743.31366}]}'
+    http_version: null
+  recorded_at: Mon, 30 Mar 2020 16:59:14 GMT
+recorded_with: VCR 5.1.0
