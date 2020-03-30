@@ -5,9 +5,8 @@ describe 'User' do
 
     visit '/'
 
-    fill_in 'search', with: 'sweet potatoes'
-
-    click_on 'search'
+    fill_in 'q', with: 'sweet potatoes'
+    click_on 'Search'
 
     expect(current_page).to eq("/foods")
 
