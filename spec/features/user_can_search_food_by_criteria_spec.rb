@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'User' do
-  it 'user sees search field when visiting home page' do
+  it 'user sees search field when visiting home page', :vcr do
 
     visit '/'
 
