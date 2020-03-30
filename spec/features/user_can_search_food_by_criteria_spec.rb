@@ -11,7 +11,7 @@ describe 'User' do
     expect(current_path).to eq("/foods")
 
     expect(page).to have_content("50 Results")
-    expect(page).to have_css(".food", count: 50)
+    expect(page).to have_css(".food", count: 10)
 
     within(first(".food")) do
       expect(page).to have_css(".upccode")
